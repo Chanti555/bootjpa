@@ -20,6 +20,7 @@ public class AlienController
 	@RequestMapping("/addAlien")
 	public String addAlien(Alien alien)
 	{
+		System.out.println("New Data");
 		repo.save(alien);
 		return "home.jsp";
 	}
